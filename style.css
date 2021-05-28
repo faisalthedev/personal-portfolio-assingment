@@ -6,6 +6,7 @@ body {
 	font-weight: normal;
 	color: #3c3c3c;
 }
+
 h1,
 h2,
 h3,
@@ -13,11 +14,21 @@ h4,
 h5,
 h6 {
 	font-family: "Bebas Neue", cursive;
+	font-weight: normal;
 }
+
 h1 {
 	font-size: 60px;
-	font-weight: normal;
-	margin-bottom: 10px;
+	margin: 30px 0px 10px;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 30px 0px 10px;
+}
+h3 {
+	font-size: 24px;
+	margin: 30px 0px 10px;
 }
 img {
 	max-width: 100%;
@@ -53,18 +64,23 @@ header {
 .header-area {
 	background: #fff;
 }
+.header-area ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
 .menu ul {
 	list-style: none;
 }
 .menu ul li {
 	float: right;
 }
-.menu a {
+.menu ul li a {
 	text-decoration: none;
 	padding: 7px 20px;
 	color: #3c3c3c;
 }
-.menu a:hover {
+.menu ul li a:hover {
 	background: orange;
 	color: #fff;
 	border-radius: 5px;
@@ -89,14 +105,61 @@ header {
 }
 
 .one-third {
-	width: 30%;
+	width: 29%;
 	float: left;
 	margin: 0px 20px;
-	padding: 20px;
+	padding: 25px;
 	border-radius: 15px;
 	box-sizing: border-box;
 	background: #fff;
 	box-shadow: 0px 6px 12px grey;
 	overflow: hidden;
-	overflow: hidden;
+}
+
+/* ---- .inquiry section ----- */
+.inquiry-area .cta {
+	background: url(images/inquiry-bg.png) no-repeat center;
+	background-size: cover;
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 60px 50px;
+	border-radius: 30px;
+	color: #fff;
+}
+.inquiry-area .cta::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.inquiry-area .cta h2,
+.inquiry-area .cta a {
+	display: inline-block;
+}
+.inquiry-area .cta h2 {
+	float: left;
+}
+.inquiry-area .cta a {
+	float: right;
+}
+
+.footer-area {
+	text-align: center;
+}
+.footer-area h3 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.footer-area h3 a {
+	text-decoration: none;
+	color: #3c3c3c;
+}
+.footer-area h4 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.footer-area .social-links a {
+	margin: 0 10px;
+}
+.footer-area .social-links img {
+	max-width: 30px;
 }
